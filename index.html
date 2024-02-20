@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda Multi-Capa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="calendar">
+        <h2>Calendario</h2>
+        <label for="layer-select">Selecciona Capa:</label>
+        <select class="selecionar" id="layer-select">
+            <option value="work">Trabajo</option>
+            <option value="personal">Personal</option>
+            <option value="meetings">Reuniones</option>
+        </select>
+        <button class="Agregar" onclick="addEvent()">Agregar Evento</button>
+        <div class="layer" id="work-layer">
+            <h3>Trabajo</h3>
+        </div>
+        <div class="layer" id="personal-layer">
+            <h3>Personal</h3>
+        </div>
+        <div class="layer" id="meetings-layer">
+            <h3>Reuniones</h3>
+        </div>
+    </div>
+    <div class="events">
+        <h2>Eventos</h2>
+        <div id="event-list">
+        </div>
+    </div>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
